@@ -1,0 +1,9 @@
+A=[]
+A.append("apple")
+A.append("apple")
+A.append("banana")
+A.append("banana")
+A.append("oragne")
+A=set(A)
+A=list(A)
+print(A)
