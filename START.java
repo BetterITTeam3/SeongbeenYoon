@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /*
 public class START {
@@ -68,6 +67,7 @@ public class START {
 
 }
 */
+/*
 public class START {
     public static void main(String[] args) {
         int temp = 1;
@@ -76,6 +76,22 @@ public class START {
             temp = sc.nextInt();
             if (temp != 0) {
                 System.out.println(temp);
+            }
+        }
+    }
+}
+*/
+import java.util.Scanner;
+
+public class START {
+    public static void main(String[] args) {
+        String str="a";
+        Scanner sc = new Scanner(System.in);
+        while (str.charAt(0) != 'q') {
+            str = sc.next();
+            System.out.println(str.charAt(0));
+            if (str.charAt(0)== 'q') {
+                break;
             }
         }
     }
