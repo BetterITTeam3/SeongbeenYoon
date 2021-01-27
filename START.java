@@ -81,6 +81,7 @@ public class START {
     }
 }
 */
+/*
 import java.util.Scanner;
 
 public class START {
@@ -94,5 +95,24 @@ public class START {
                 break;
             }
         }
+    }
+}
+*/
+
+import java.util.Scanner;
+public class START{
+    public static void main(String[] args){
+        int[] arr=new int[3];
+        Scanner sc = new Scanner(System.in);
+        for(int i=0;i<3;i++){
+            arr[i]=sc.nextInt();
+        }
+        int a=arr[0];
+        int r=arr[1];
+        int n=arr[2];
+        for(int i=0;i<n-1;i++){
+            a=a*r;
+        }
+        System.out.println(a);
     }
 }
