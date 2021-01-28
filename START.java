@@ -98,7 +98,7 @@ public class START {
     }
 }
 */
-
+/*
 import java.util.Scanner;
 public class START{
     public static void main(String[] args){
@@ -114,5 +114,24 @@ public class START{
             a=a*r;
         }
         System.out.println(a);
+    }
+}*/
+import java.util.Scanner;
+public class START {
+    public static void main(String[] args) {
+        double tmp=1;
+        Scanner sc = new Scanner(System.in);
+        for(int i=0;i<4;i++){
+            tmp*=sc.nextDouble();
+        }
+        tmp/=8;
+        for(int i=0;i<2;i++){
+            tmp/=1024;
+        }
+        tmp*=10;
+        tmp=Math.ceil(tmp);
+        tmp/=10;
+        System.out.print(tmp);
+        System.out.println(" MB");
     }
 }
