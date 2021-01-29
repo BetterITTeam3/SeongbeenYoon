@@ -110,12 +110,14 @@ public class START{
         int a=arr[0];
         int r=arr[1];
         int n=arr[2];
+        long rst=a;
         for(int i=0;i<n-1;i++){
-            a=a*r;
+            rst=rst*r;
         }
-        System.out.println(a);
+        System.out.println(rst);
     }
 }*/
+/*
 import java.util.Scanner;
 public class START {
     public static void main(String[] args) {
@@ -133,5 +135,50 @@ public class START {
         tmp/=10;
         System.out.print(tmp);
         System.out.println(" MB");
+    }
+}*/
+public class START {
+
+    /* An instance variable representing the potato's species. */
+    private String variety;
+    /* An instance variable representing the potato's age. */
+    private int age;
+
+    /** A constructor that returns a very young russet burbank potato. */
+    public START() {
+        this.variety = "Russet Burbank";
+        this.age = 0;
+    }
+
+    /** A constructor that allows you to specify its variety and age. */
+    public START(String variety, int age) {
+        this.variety = variety;
+        this.age = age;
+    }
+
+    /** A getter method that returns the potato's type. */
+    public String getVariety() {
+        return this.variety;
+    }
+
+    /** A getter method that returns the potato's age. */
+    public int getAge() {
+        return this.age;
+    }
+
+    /** A setter method that sets the potato's age to AGE. */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /** A method that grows the potato. Note it increases its age by 1. */
+    public void grow() {
+        System.out.println("Photosynthesis!");
+        this.age = this.age + 1;
+    }
+
+    /** Did you know potatoes can flower? No? Neither did I... */
+    public void flower() {
+        System.out.println("I am now a beautiful potato");
     }
 }
